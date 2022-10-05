@@ -18,15 +18,17 @@ scene.on('update', e => {
         gsap.to('.gray',{width:0, duration:1});
         gsap.to('.tes',{x:800, duration:1});        
         gsap.to('.text-intro',{opacity:1, x:"15%",duration:1});
+        gsap.to('.scroll', {y:"50%", opacity:0, duration:1});
     }
     if(e.scrollPos<100){
-        gsap.to('.blue',{width:"47%",height:"86%", duration:1});
-        gsap.to('.gray',{width:"47%", duration:1});
+        gsap.to('.blue',{width:"50%",height:"100%", duration:1});
+        gsap.to('.gray',{width:"50%", duration:1});
         gsap.to('.text-intro',{opacity:0, x:0,duration:1});
         gsap.to('.tes',{x:0, duration:1});
+        gsap.to('.scroll', {y:0, opacity:1, duration:1});
     }
     if(e.scrollPos>600){
-        gsap.to('.container',{y:"-20%", duration:1});
+   
     }
 })
 

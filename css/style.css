@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Product Sans;
     overflow-x: hidden;
 }
 .background{
@@ -15,12 +14,14 @@
     overflow: hidden;
 }
 body{
-    background: #F8F8F8;
+    font-family: 'Product sans', sans-serif;
+    background: #F2F2F2;
 }
 .blue{
     width: 50%;
     height: 100%;
     background-color: #B7C4CF;
+
 }
 .gray{
     width: 50%;
@@ -31,14 +32,15 @@ body{
 .background h1{
     position: absolute;
     font-size: 150px;
+    font-weight: 800;
     overflow: hidden;
     color: #2B2B2B;
 }
 .container{
-    width: 100%;
+    width: 96%;
     margin: auto;
-    height: 100vh;
-    background-color: #B7C4CF;
+    margin-bottom: 3%;
+    background-color: #F2F2F2;
 }
 .navbar{
     position: fixed;
@@ -108,7 +110,7 @@ body{
     font-size: 14px;
     transform: rotate(-90deg);
 }
-/* .menu-item:hover{
+/* .menu-item:hover{  
     background: black;
 } */
 .socmed{
@@ -140,10 +142,64 @@ body{
     width: 80%;
 }
 .footer{
-    background: #2B2B2B;
+    background: #F8F8F8;
     width: 100%;
     position: fixed;
     bottom: 0;
     height: 50px;
     z-index: 4;
+}
+.blue .scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+}
+.scroll img{
+    width: 10px;
+}
+.scroll span{
+    font-size: 14px;
+    color: #EEE3CB;
+    transform: rotate(-90deg);
+    padding: 25px 0px;
+    width:50px;
+}
+.rect{
+    position: absolute;
+    right: 0;
+}
+.rect1{
+    position: absolute;
+    top: 300%;
+}
+.vl{
+    width: 1px;
+    background-color: #967E76;
+    height: 280vh;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 176vh;
+}
+.text-about{
+    width: 97%;
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.text-about .left{
+    width: 100%;
+    margin-left: 4%;
+}
+.text-about .left img{
+    margin-top: 10%;
+}
+.text-about p{
+    width: 80%;
 }
