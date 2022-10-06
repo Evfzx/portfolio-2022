@@ -5,7 +5,7 @@ const scene = new ScrollMagic.Scene({
     duration: 500,
     triggerElement: bg,
     triggerHook: 0,
-}).addIndicators().setPin(bg).addTo(controller);
+}).setPin(bg).addTo(controller);
 
 let scrollPos = 0;
 let delay = 0;
@@ -16,15 +16,15 @@ scene.on('update', e => {
     if(e.scrollPos >0){
         gsap.to('.blue',{width:"100%",height:"100%", duration:1});
         gsap.to('.gray',{width:0, duration:1});
-        gsap.to('.tes',{x:800, duration:1});        
+        gsap.to('.tes',{x:700, duration:1});        
         gsap.to('.text-intro',{opacity:1, x:"15%",duration:1});
         gsap.to('.scroll', {y:"50%", opacity:0, duration:1});
     }
     if(e.scrollPos<100){
         gsap.to('.blue',{width:"50%",height:"100%", duration:1});
         gsap.to('.gray',{width:"50%", duration:1});
+        gsap.to('.tes',{x:0, duration:1});        
         gsap.to('.text-intro',{opacity:0, x:0,duration:1});
-        gsap.to('.tes',{x:0, duration:1});
         gsap.to('.scroll', {y:0, opacity:1, duration:1});
     }
     if(e.scrollPos>600){
